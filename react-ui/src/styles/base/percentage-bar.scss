@@ -1,0 +1,59 @@
+.percentage {
+    width: 40%;
+    position: relative;
+    margin-bottom: 5%;
+    display: inline-block;
+    font-size: 0.5rem;
+    margin-right: 1rem;
+    &_title {
+        p {
+            display: inline;
+            margin-right: 1rem;
+        }
+        &_img {
+            &_lg {
+                position: relative;
+                width: 5rem;
+                height: 3.5rem;
+            }
+            &_m {
+                position: relative;
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+            &_s {
+                position: relative;
+                width: 3rem;
+                height: 3.5rem;
+            }
+        }
+    }
+    &_bar {
+        height: .7 em;
+        border-radius: 2px;
+        display: block;
+        text-align: center;
+        &_percent {
+            height: .7em;
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:  500px) {
+    .percentage {
+        &_title {
+            &_img {
+                &_lg {
+                    width: 3rem;
+                }
+                &_m {
+                    width: 2.5rem;
+                }
+                &_s {
+                    width: 2rem;
+                }
+            }
+        }
+    }
+}    

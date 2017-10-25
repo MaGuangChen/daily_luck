@@ -1,0 +1,59 @@
+.contact {
+    &_input {
+        &_timeNsalary {
+            margin-top: 3rem;
+            width: 100%;
+            &_time {
+                    margin: 0 0 2rem 1.5rem;    
+                    border: 1px solid;
+                    border-radius: 25px;
+                    padding: 15px;
+                    cursor: pointer;
+                    &:hover {
+                        background: #3429AB;
+                        color: white;
+                        box-shadow: 0 0 10px 3px #696969;
+                    }
+            }
+            &_salary {
+                background: #DCDCDC;
+                padding: 20px;
+                margin: 0 25% 0 25%;
+                border-radius: 25px;
+                i {
+                    margin-bottom: 1rem;
+                }
+                p {
+                    display: inline;
+                }
+                &_range {
+                    margin: 1rem 0 0 0;
+                }
+                &_title{
+                    p{
+                        font-size: 2.5rem;
+                    }
+                }
+                &_slash {
+                    margin: 0 1rem;
+                }
+            }
+        }
+        &_submit {
+            margin: 4rem 35% 0 35%;
+            border: 2px solid #696969;
+            padding: 10px;
+            border-radius: 25px;
+            font-size: 2rem;
+            cursor: pointer;
+            &:hover {
+                background: #3429AB;
+                color: white;
+                box-shadow: 0 0 10px 3px #696969;
+            }
+            @media screen and(max-width: 768px) {
+                margin: 4rem 25% 0 25%;    
+            }
+        }
+    }
+}

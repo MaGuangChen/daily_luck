@@ -1,0 +1,53 @@
+.front {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: url("../images/laptop.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center; }
+  .front_logo {
+    background: rgba(105, 105, 105, 0.9);
+    color: white;
+    top: 45%;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    padding: 10px;
+    animation: onLoad 2s cubic-bezier(0.4, 0.02, 0.57, 0.82); }
+    .front_logo h1 {
+      font-size: 3rem; }
+    .front_logo p {
+      font-weight: 300; }
+    .front_logo a {
+      color: white;
+      cursor: pointer; }
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .front_logo {
+    top: 20%;
+    width: 100%;
+    background: rgba(105, 105, 105, 0.7); }
+  .front .sub-button {
+    margin-top: 1rem;
+    display: block; } }
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .front_logo {
+    top: 20%;
+    width: 100%;
+    background: rgba(105, 105, 105, 0.7); }
+  .front .main-button {
+    position: relative;
+    display: block;
+    margin-top: 1rem; }
+  .front .sub-button {
+    margin-top: 1rem;
+    display: block; } }
+
+@keyframes onLoad {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

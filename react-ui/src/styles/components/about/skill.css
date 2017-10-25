@@ -1,0 +1,44 @@
+.percentage {
+  width: 40%;
+  position: relative;
+  margin-bottom: 5%;
+  display: inline-block;
+  font-size: 0.5rem;
+  margin-right: 1rem; }
+  .percentage_title p {
+    display: inline;
+    margin-right: 1rem; }
+  .percentage_title_img_lg {
+    position: relative;
+    width: 5rem;
+    height: 3.5rem; }
+  .percentage_title_img_m {
+    position: relative;
+    width: 3.5rem;
+    height: 3.5rem; }
+  .percentage_title_img_s {
+    position: relative;
+    width: 3rem;
+    height: 3.5rem; }
+  .percentage_bar {
+    height: .7 em;
+    border-radius: 2px;
+    display: block;
+    text-align: center; }
+    .percentage_bar_percent {
+      height: .7em;
+      display: block; }
+
+@media screen and (min-width: 375px) and (max-width: 500px) {
+  .percentage_title_img_lg {
+    width: 3rem; }
+  .percentage_title_img_m {
+    width: 2.5rem; }
+  .percentage_title_img_s {
+    width: 2rem; } }
+
+.skill {
+  margin: 0% 10% 0% 10%;
+  border: 1px solid;
+  border-top: none;
+  padding: 10px; }
