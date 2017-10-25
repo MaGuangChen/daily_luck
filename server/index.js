@@ -15,7 +15,7 @@ app.use(express.static(path.resolve(__dirname, '../react-ui/build')));
 
 // connect mLab
 mongoose.Promise = global.Promise;
-const mongoDB = 'mongodb://paul:paul@ds125335.mlab.com:25335/resume';
+const mongoDB = 'mongodb://daily_luck_admin:19901122@ds231725.mlab.com:31725/daily_luck_db';
 mongoose.connect(mongoDB, { useMongoClient: true });
 const db = mongoose.connection;
 db.once('open', () => console.log('Connected to MongoLab instance.'))
